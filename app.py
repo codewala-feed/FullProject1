@@ -7,7 +7,10 @@ my_db = my_client["calci"] # database
 results = my_db["results"] # collection
 isLoggedIn = False
 
-credentials = {"steeve@gmail.com":"Steeve#123"}
+credentials = {
+    "steeve@gmail.com":"Steeve#123",
+     "tony@gmail.com":"Tony#123"
+    }
 
 @app.route("/", methods=["GET", "POST"])
 def homepage():
